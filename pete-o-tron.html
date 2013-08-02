@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+   <title>Greeting Generator</title>
+
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+   <script type="text/javascript">
+
+      function getGreeting() {
+
+         var salutation = new Array(
+	"Yo",
+         "Later",
+	 "Laterz",
+         "Ciao",
+	"See ya");
+
+         var randomChoice1 = Math.floor(Math.random()* salutation.length)
+
+         var locations = new Array(
+	 "Cave",
+         "Canyon",
+         "Swamp",
+         "Moon",
+         "Crevace",
+          "Tree",
+         "Loch",
+         "Desert",
+         "Roof"
+	);
+
+         var randomChoice2 = Math.floor(Math.random()* locations.length)
+
+         var beasts = new Array(
+	"Donkeys",
+         "Fish",
+         "Chickens",
+         "Badgers",
+         "Ferrets",
+         "Geese",
+         "Wombats",
+         "Lizards",
+         "Roosters",
+         "Pigs",
+         "Llamas"
+	);
+
+         var randomChoice3 = Math.floor(Math.random()* beasts.length)
+
+         $("#myBox").html(salutation[randomChoice1]+" "+locations[randomChoice2]+" "+beasts[randomChoice3]);
+
+      }
+
+   </script>
+
+   <style type="text/css">
+
+      #mybox {
+        position: absolute;
+        left: 400px;
+        top: 10px;
+        width:25%;
+        height:100%;
+        background-color: orange;
+        font-size: 60px;
+        text-align: center;
+      }
+
+      p{
+        font-size: 20px;
+        font-family: arial;
+      }
+
+   </style>
+</head>
+
+<body>
+
+   <div id="myBox">
+   What are you waiting for?
+   </div>
+
+   <p>
+     <a href="javascript:getGreeting()">Hit me big dog!</a>
+   </p>
+
+</body>
+</html>
