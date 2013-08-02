@@ -4,17 +4,17 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script type="text/javascript">
       function getGreeting() {
-        var salutation = new Array(
+        var salutation = [
           "Yo",
           "Later",
           "Laterz",
           "Ciao",
           "See ya"
-        );
+        ];
 
         var randomChoice1 = Math.floor(Math.random() * salutation.length)
 
-        var locations = new Array(
+        var locations = [
           "Cave",
           "Canyon",
           "Swamp",
@@ -24,11 +24,11 @@
           "Loch",
           "Desert",
           "Roof"
-        );
+        ];
 
         var randomChoice2 = Math.floor(Math.random() * locations.length)
 
-        var beasts = new Array(
+        var beasts = [
           "Donkeys",
           "Fish",
           "Chickens",
@@ -40,7 +40,7 @@
           "Roosters",
           "Pigs",
           "Llamas"
-        );
+        ];
 
         var randomChoice3 = Math.floor(Math.random() * beasts.length)
 
