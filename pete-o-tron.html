@@ -1,4 +1,6 @@
-<html>
+<!doctype html>
+
+<html lang="en">
 <!--
                  __                                      __                        
   ______   _____/  |_  ____             ____           _/  |________  ____   ____  
@@ -10,19 +12,29 @@
 -->
   <head>
     <title>Greeting Generator</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-    <script type="text/javascript">
-      function getGreeting() {
-        var salutation = [
-          "Yo",
-          "Later",
-          "Laterz",
-          "Ciao",
-          "See ya",
-          "Audi",
-          "Tomorrow",
-          "Kill you last"
-        ];
+      <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+      <script src="http://jquery-csv.googlecode.com/git/src/jquery.csv.js"></script>
+      <script type="text/javascript">
+      
+      $.ajax({
+      url : "https://docs.google.com/spreadsheet/pub?key=0AiP6zL-gKn64dDVVRWxlTjBGbnNjYW5DMUQ3WHVGVXc&single=true&gid=0&output=csv",
+      success : function(salutation){alert(salutation);}
+      });
+      
+         
+    
+//       function getGreeting() {
+//         var salutation = [
+//           "Yo",
+//           "Later",
+//           "Laterz",
+//           "Ciao",
+//           "See ya",
+//           "Audi",
+//           "Tomorrow",
+//           "Kill you last"
+//         ];
 
         var randomChoice1 = Math.floor(Math.random() * salutation.length);
 
