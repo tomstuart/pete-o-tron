@@ -1,4 +1,13 @@
 <html>
+<!--
+                 __                                      __                        
+  ______   _____/  |_  ____             ____           _/  |________  ____   ____  
+  \____ \_/ __ \   __\/ __ \   ______  /  _ \   ______ \   __\_  __ \/  _ \ /    \ 
+  |  |_> >  ___/|  | \  ___/  /_____/ (  <_> ) /_____/  |  |  |  | \(  <_> )   |  \
+  |   __/ \___  >__|  \___  >          \____/           |__|  |__|   \____/|___|  /
+  |__|        \/          \/                                                    \/ 
+
+-->
   <head>
     <title>Greeting Generator</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -9,7 +18,10 @@
           "Later",
           "Laterz",
           "Ciao",
-          "See ya"
+          "See ya",
+          "Audi",
+          "Tomorrow",
+          "Kill you last"
         ];
 
         var randomChoice1 = Math.floor(Math.random() * salutation.length);
@@ -23,13 +35,27 @@
           "Tree",
           "Loch",
           "Desert",
-          "Roof"
+          "Roof",
+          "Mountain",
+          "Valley",
+          "Sewer",
+          "Tube",
+          "Basement",
+          "Attic",
+          "Ocean",
+          "Lagoon",
+          "Paddock",
+          "River"
         ];
 
         var randomChoice2 = Math.floor(Math.random() * locations.length);
 
         var beasts = [
           "Donkeys",
+          "Dogs",
+          "Cats",
+          "Goats",
+          "Hampsters"
           "Fish",
           "Chickens",
           "Badgers",
@@ -39,7 +65,15 @@
           "Lizards",
           "Roosters",
           "Pigs",
-          "Llamas"
+          "Llamas",
+          "Mooses",
+          "Crickets",
+          "Lobsters",
+          "Rabbits",
+          "Frogs",
+          "Slugs",
+          "Worms",
+          "Roosters"
         ];
 
         var randomChoice3 = Math.floor(Math.random() * beasts.length);
@@ -68,12 +102,16 @@
   </head>
 
   <body>
+     <div>
+     <p>
+       <a href="javascript:getGreeting()">Hit me big dog!</a>
+     </p>                 
+     </div>
+    
      <div id="myBox">
        What are you waiting for?
      </div>
 
-     <p>
-       <a href="javascript:getGreeting()">Hit me big dog!</a>
-     </p>
+
   </body>
 </html>
