@@ -6,7 +6,6 @@
   |  |_> >  ___/|  | \  ___/  /_____/ (  <_> ) /_____/  |  |  |  | \(  <_> )   |  \
   |   __/ \___  >__|  \___  >          \____/           |__|  |__|   \____/|___|  /
   |__|        \/          \/                                                    \/ 
-
 -->
   <head>
     <title>Greeting Generator</title>
@@ -14,86 +13,87 @@
     <script type="text/javascript">
       function getGreeting() {
         var salutation = [
-          "Yo",
-          "Later",
-          "Laterz",
-          "Ciao",
-          "See ya",
-          "Audi",
-          "Tomorrow",
-          "Kill you last"
+          "Yo,",
+          "Later,",
+          "Laterz,",
+          "Ciao,",
+          "See ya,",
+          "Adios,",
+          "Offski,",        
+          "Audi,",
+          "Tomorrow,",
+          "Kill you last,"
         ];
-
         var randomChoice1 = Math.floor(Math.random() * salutation.length);
-
         var locations = [
-          "Cave",
-          "Canyon",
-          "Swamp",
-          "Moon",
-          "Crevace",
-          "Tree",
-          "Loch",
-          "Desert",
-          "Roof",
-          "Mountain",
-          "Valley",
-          "Sewer",
-          "Tube",
-          "Basement",
-          "Attic",
-          "Ocean",
-          "Lagoon",
-          "Paddock",
-          "River"
+          "cave",
+          "canyon",
+          "swamp",
+          "moon",
+          "crevace",
+          "tree",
+          "loch",
+          "desert",
+          "roof",
+          "mountain",
+          "valley",
+          "sewer",
+          "tube",
+          "basement",
+          "attic",
+          "ocean",
+          "lagoon",
+          "paddock",
+          "river",
+          "cliff",
+          "precipice",
+          "marsh",
+          "couch",
+          "table",
+          "garden"
         ];
-
         var randomChoice2 = Math.floor(Math.random() * locations.length);
-
         var beasts = [
-          "Donkeys",
-          "Dogs",
-          "Cats",
-          "Goats",
-          "Hampsters",
-          "Fish",
-          "Chickens",
-          "Badgers",
-          "Ferrets",
-          "Geese",
-          "Wombats",
-          "Lizards",
-          "Roosters",
-          "Pigs",
-          "Llamas",
-          "Mooses",
-          "Crickets",
-          "Lobsters",
-          "Rabbits",
-          "Frogs",
-          "Slugs",
-          "Worms",
-          "Roosters"
+          "donkeys!",
+          "dogs!",
+          "cats!",
+          "goats!",
+          "hampsters!",
+          "fish!",
+          "chickens!",
+          "badgers!",
+          "ferrets!",
+          "geese!",
+          "wombats!",
+          "lizards!",
+          "roosters!",
+          "pigs!",
+          "llamas!",
+          "mooses!",
+          "crickets!",
+          "lobsters!",
+          "rabbits!",
+          "frogs!",
+          "slugs!",
+          "worms!",
+          "roosters!"
         ];
-
         var randomChoice3 = Math.floor(Math.random() * beasts.length);
-
         $("#myBox").html(salutation[randomChoice1] + " " + locations[randomChoice2] + " " + beasts[randomChoice3]);
       }
     </script>
 
     <style type="text/css">
       #mybox {
-        position: absolute;
-        left: 400px;
         top: 10px;
-        width: 25%;
-        height: 100%;
-        background-color: orange;
-        font-size: 60px;
-        text-align: center;
+        background-color: greenyellow;
+        font-size: 72px;
+        text-align: left;
+        padding: 10px 10px 10px 10px;
+        margin-left: 10px;
+        font-family: helvetica;
+        font-weight: bolder;
       }
-
       p {
         font-size: 20px;
         font-family: arial;
@@ -102,14 +102,15 @@
   </head>
 
   <body>
+
+    
+     <div id="myBox">
+       What are you waiting for?
+     </div>
      <div>
      <p>
        <a href="javascript:getGreeting()">Hit me big dog!</a>
      </p>                 
-     </div>
-    
-     <div id="myBox">
-       What are you waiting for?
      </div>
 
 
